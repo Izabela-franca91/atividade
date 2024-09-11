@@ -1,0 +1,174 @@
+typescript intoduction
+
+
+1:
+TS callows developers to add 
+types
+ to JavaScript.
+
+2:
+JavaScript is a 
+loosely
+ typed language.
+
+Ts get started
+
+1:
+tsconfig
+.json
+
+Ts special types
+
+1-
+
+Explicit
+
+Implicit
+
+2-
+
+let 
+firstName
+ = "Dylan";
+
+3-
+
+let 
+firstName
+: 
+string
+ = "Dylan";
+
+Ts special types
+
+1-
+let myVar: 
+any
+;
+
+2-
+let myVar: 
+unknown
+;
+
+Ts arrays
+
+1-
+
+const names: 
+readonly
+ string[] = ["Dylan"];
+
+Ts tuples
+
+1-
+False
+
+2-
+let ourTuple: [
+string
+, 
+boolean
+];
+
+Ts object types
+
+1-
+const car: { type: 
+string
+, model: 
+string
+, year: 
+number
+ } = {
+  type: "Toyota",
+  model: "Corolla",
+  year: 2009
+};
+
+2-
+const car: { type: string, 
+model?
+: string } = {
+  type: "Toyota"
+};
+
+Ts enums
+
+1-
+enum 
+myEnum
+ {
+  
+myFirstConst
+,
+  
+mySecondConst
+
+};
+
+2-
+
+enum 
+myEnum
+ {
+  
+myFirstConst
+ = "
+first
+",
+  
+mySecondConst
+ = "
+second
+"
+};
+
+Ts aliases e interfaces
+
+1-
+
+type
+ carType = 
+string
+
+2-
+
+interface
+ 
+myInterface
+ {
+  
+myProp
+: 
+string
+
+}
+
+3-
+
+interface
+ myExtInterface 
+extends
+ 
+myInterface
+ {
+  
+myExtProp
+: 
+number
+
+}
+
+Ts script types
+
+1-
+function myFunc(myVar: 
+string
+ 
+|
+ 
+number
+) {
+  console.log(myVar)
+}
